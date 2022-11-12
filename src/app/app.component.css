@@ -28,6 +28,7 @@
   font-weight: 700;
 }
 .mainContainer .container input {
+  width: 100%;
   height: calc(2.25rem + 2px);
   font-family: inherit;
   font-size: 1rem;
@@ -47,6 +48,7 @@
   box-shadow: black;
 }
 .mainContainer .container select {
+  margin-top: 10px;
   height: calc(2.25rem + 2px);
   font-family: inherit;
   font-size: 1rem;

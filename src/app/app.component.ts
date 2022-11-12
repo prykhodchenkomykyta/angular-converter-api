@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   firstAmount: number = 1;
   secondAmount: number = 1;
 
-  async getRates(): Promise<void> {
+  async getRates() {
     const response = await fetch(this.url).then((data) => data.json());
     this.data = response.rates;
     this.currencies = Object.keys(response.rates).filter(
