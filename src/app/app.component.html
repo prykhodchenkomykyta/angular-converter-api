@@ -1,0 +1,32 @@
+<div class="mainContainer">
+  <div class="container">
+    <div class="title">Конвертер валют</div>
+    <div>
+      <input
+        [value]="firstAmount"
+        (input)="firstInputChange($event)"
+        type="number"
+      />
+      <select (change)="firstSelectChange($event)">
+        <option *ngFor="let currency of currencies">
+          {{ currency }}
+        </option>
+      </select>
+    </div>
+
+    <div class="equals">=</div>
+
+    <div>
+      <input
+        [value]="secondAmount"
+        (input)="secondInputChange($event)"
+        type="number"
+      />
+      <select (change)="secondSelectChange($event)">
+        <option *ngFor="let currency of currencies">
+          {{ currency }}
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
